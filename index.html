@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+     <h1>WEATHER APP</h1>
+              
+     <!-- tab contaier -->
+     <div class="tabContainer">
+        <div id="leftTab" class="tab">your weather</div>
+        <div id="rightTab" class="tab">search weather</div>
+     </div>
+
+     <!-- top level continer-->
+
+     <div class="weather-Container">
+
+      <!-- grant access -->
+      <div class="grant-Location-Container sub-access-lo" >
+        <img src="./img/location.png" width="50" height="50" loading="lazy">
+        <p>Grant Location Access</p>
+        <p>Allow Access to get weather information</p>
+        <button class="btn" id="data-grantAccessbtn">GRANT ACCESS</button>
+      </div>
+
+      <!-- search bar -->
+      <form action="" class="form-contianer" data-searchform >
+        <input placeholder="search for city..." data-searchInput >
+        <button class="btn2" type="submit">
+          <img src="./img/search.png" alt="" width="30" height="27">
+        </button>
+      </form>
+
+      <!-- loading  -->
+      <div class="locating-continer" id="loading">
+        <img src="./img/loading-loading-gif.gif" alt="" width="60" height="40">
+        <p>Loading....</p>
+      </div>
+
+      <!-- main weather ui -->
+      <div class="userInfoContiner weather">
+
+        <div class="name">
+          <p data-cityName></p>
+          <img data-countryimg>
+        </div>
+
+        <p data-weatherDesc></p>
+
+        <img data-weatherimg>
+
+        <p data-temp></p>
+
+        <div class="patameter">
+          <!-- card 1 -->
+          <div class="card1">
+            <img src="./img/wind.png" alt="" width="70" height="50">
+            <p>windspeed</p>
+            <p data-windSpeed></p>
+          </div>
+
+          
+          <div class="card1">
+            <img src="./img/humidity.png" alt="" width="70" height="50">
+            <p>Humidity</p>
+            <p data-humiSpeed></p>
+          </div>
+
+          <div class="card1">
+            <img src="./img/cloud.png" alt="" width="70" height="50">
+            <p>Cloud</p>
+            <p data-cloudSpeed></p>
+          </div>
+
+          
+          <div class="card1">
+            <img src="./img/temp.png" alt="" width="70" height="50">
+            <p> minimum temperature</p>
+            <p data-mintemp></p>
+          </div>
+
+          <div class="card1">
+            <img src="./img/temp.png" alt="" width="70" height="50">
+            <p> maximum temperature</p>
+            <p data-maxtemp> </p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+     </div>
+  </div>
+    
+
+
+<script src="script.js"></script>  
+</body>
+</html>
